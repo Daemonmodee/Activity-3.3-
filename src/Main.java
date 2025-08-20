@@ -1,5 +1,6 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Main {
     // Static list of users, acting as a database
     private static ArrayList<User> users = new ArrayList<>();
@@ -38,7 +39,6 @@ public class Main {
         System.out.println("2. Sign up");
         System.out.println("3. Exit");
         System.out.print("Enter your choice: ");
-        // Ask for user choice
         Scanner scanner = new Scanner(System.in);
         int choice = scanner.nextInt();
         handleMenu(choice);
